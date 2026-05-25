@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NewsBreak · 本地化战略人才分析</title>
+  <meta name="description" content="NewsBreak 从本地内容平台向本地服务平台演进的战略人才分析（算法与架构方向）" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="#top">
+        <span class="brand__mark">NB</span>
+        <span class="brand__name">本地化战略人才分析</span>
+      </a>
+      <nav class="nav">
+        <a href="#background">战略背景</a>
+        <a href="#stages">演进阶段</a>
+        <a href="#roles">关键人才</a>
+        <a href="#gap">能力差距</a>
+        <a href="#priority">招聘优先级</a>
+        <a href="#conclusion">结论</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__inner">
+        <span class="eyebrow">算法与架构方向 · 战略人才盘点</span>
+        <h1>从<em>本地新闻推荐</em>到<em>本地信息与服务</em></h1>
+        <p class="lede">
+          NewsBreak 正处于从「本地新闻推荐平台」演进为「本地信息与服务平台」的关键路径上。
+          这份分析回答两个问题：<strong>下一阶段缺什么系统</strong>，以及<strong>需要什么样的人</strong>来构建它。
+        </p>
+
+        <!-- Core path -->
+        <div class="path" aria-label="核心演进路径">
+          <div class="path__node done">
+            <span class="path__label">Content</span>
+            <span class="path__status">已完成</span>
+          </div>
+          <div class="path__arrow" aria-hidden="true">→</div>
+          <div class="path__node gap">
+            <span class="path__label">Intent</span>
+            <span class="path__status">核心缺口</span>
+          </div>
+          <div class="path__arrow" aria-hidden="true">→</div>
+          <div class="path__node gap">
+            <span class="path__label">POI</span>
+            <span class="path__status">结构性缺口</span>
+          </div>
+          <div class="path__arrow" aria-hidden="true">→</div>
+          <div class="path__node future">
+            <span class="path__label">Marketplace</span>
+            <span class="path__status">未来</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 一、战略背景 -->
+    <section id="background" class="section">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <h2>战略背景</h2>
+      </div>
+      <div class="card prose">
+        <p>
+          NewsBreak 正从「<strong>本地新闻推荐平台</strong>」演进为「<strong>本地信息与服务平台</strong>」，核心路径是：
+        </p>
+        <p class="callout">Content → Intent → POI → Marketplace</p>
+        <p>
+          当前系统已具备较强的本地内容推荐能力，但<strong>尚未形成完整的本地决策与服务系统</strong>。
+        </p>
+      </div>
+    </section>
+
+    <!-- 二、系统演进阶段 -->
+    <section id="stages" class="section">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2>系统演进阶段</h2>
+      </div>
+
+      <div class="stages">
+        <article class="stage stage--done">
+          <header class="stage__head">
+            <span class="stage__badge">Stage 1</span>
+            <span class="stage__status">已完成</span>
+          </header>
+          <h3>Local Content Platform</h3>
+          <p class="stage__essence">内容推荐系统 · Content-centric system</p>
+
+          <h4>核心能力</h4>
+          <ul>
+            <li>Feed 推荐系统</li>
+            <li>本地新闻分发（geo-aware ranking）</li>
+            <li>用户兴趣建模（content-based）</li>
+            <li>CTR / engagement optimization</li>
+          </ul>
+        </article>
+
+        <article class="stage stage--gap">
+          <header class="stage__head">
+            <span class="stage__badge">Stage 2</span>
+            <span class="stage__status">当前缺失核心</span>
+          </header>
+          <h3>Local Intent Platform</h3>
+          <p class="stage__essence">意图驱动的推荐系统 · Intent-centric system</p>
+
+          <h4>目标能力</h4>
+          <ul>
+            <li>用户本地意图识别（implicit intent）</li>
+            <li>Feed + Search 融合</li>
+            <li>content → action mapping</li>
+            <li>本地决策排序系统</li>
+          </ul>
+        </article>
+
+        <article class="stage stage--future">
+          <header class="stage__head">
+            <span class="stage__badge">Stage 3</span>
+            <span class="stage__status">未来</span>
+          </header>
+          <h3>Local Marketplace Platform</h3>
+          <p class="stage__essence">本地交易与履约系统 · Marketplace system</p>
+
+          <h4>目标能力</h4>
+          <ul>
+            <li>POI / 商家系统</li>
+            <li>supply-demand matching</li>
+            <li>dispatch / routing / ETA</li>
+            <li>pricing & optimization</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 三、关键人才结构 -->
+    <section id="roles" class="section">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2>关键人才结构</h2>
+        <p class="section__sub">围绕三阶段演进，对应三位核心负责人。</p>
+      </div>
+
+      <div class="roles">
+        <!-- Role 1 -->
+        <article class="role">
+          <header class="role__head">
+            <span class="role__tier tier-p0">P0 · 立即招聘</span>
+            <h3>Local AI / Intent System Owner</h3>
+            <p class="role__oneliner">
+              负责构建「<strong>用户在本地想做什么</strong>」的统一理解与排序系统。
+            </p>
+          </header>
+
+          <div class="role__body">
+            <div class="role__col">
+              <h4>核心职责</h4>
+              <ul>
+                <li>Feed + Search 融合架构</li>
+                <li>Local intent modeling</li>
+                <li>content → service / action 转化</li>
+                <li>ranking 从 CTR → decision optimization</li>
+                <li>real-time personalization</li>
+              </ul>
+            </div>
+            <div class="role__col">
+              <h4>必备背景</h4>
+              <ul>
+                <li>推荐系统 / 搜索排序经验（强）</li>
+                <li>Local / geo / LBS 相关经验（强加分）</li>
+                <li>多目标优化 / embedding system</li>
+              </ul>
+
+              <h4>典型来源公司</h4>
+              <div class="chips">
+                <span class="chip">字节跳动（推荐/搜索）</span>
+                <span class="chip">Google（Search / Maps）</span>
+                <span class="chip">小红书（content→intent）</span>
+                <span class="chip">Yelp（local search）</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Role 2 -->
+        <article class="role">
+          <header class="role__head">
+            <span class="role__tier tier-p05">P0.5 · 同步启动</span>
+            <h3>POI / Merchant Intelligence Owner</h3>
+            <p class="role__oneliner">
+              负责构建「<strong>现实世界有哪些商家/地点及其能力</strong>」的结构化理解系统。
+            </p>
+          </header>
+
+          <div class="role__body">
+            <div class="role__col">
+              <h4>核心职责</h4>
+              <ul>
+                <li>POI / entity system design</li>
+                <li>merchant graph / knowledge graph</li>
+                <li>geo relationship modeling</li>
+                <li>entity resolution & dedup</li>
+                <li>service taxonomy design</li>
+                <li>POI embedding system</li>
+              </ul>
+            </div>
+            <div class="role__col">
+              <h4>必备背景</h4>
+              <ul>
+                <li>LBS / map / geo system</li>
+                <li>knowledge graph / entity system</li>
+                <li>large-scale structured data system</li>
+              </ul>
+
+              <h4>典型来源公司</h4>
+              <div class="chips">
+                <span class="chip">美团（POI / 商家中台）</span>
+                <span class="chip">Google（Maps / Knowledge Graph）</span>
+                <span class="chip">高德地图（地理系统）</span>
+                <span class="chip">Yelp（local business graph）</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Role 3 -->
+        <article class="role">
+          <header class="role__head">
+            <span class="role__tier tier-p1">P1 · 后置</span>
+            <h3>Marketplace Optimization Owner</h3>
+            <p class="role__oneliner">
+              负责在<strong>供需约束下完成最优匹配与履约</strong>的系统设计。
+            </p>
+          </header>
+
+          <div class="role__body">
+            <div class="role__col">
+              <h4>核心职责</h4>
+              <ul>
+                <li>supply-demand matching</li>
+                <li>dispatch / routing / scheduling</li>
+                <li>ETA prediction</li>
+                <li>pricing / incentive system</li>
+                <li>real-time optimization / OR</li>
+              </ul>
+            </div>
+            <div class="role__col">
+              <h4>必备背景</h4>
+              <ul>
+                <li>marketplace / logistics system</li>
+                <li>运筹优化 / OR / RL</li>
+                <li>real-time system design</li>
+              </ul>
+
+              <h4>典型来源公司</h4>
+              <div class="chips">
+                <span class="chip">Uber（dispatch / marketplace）</span>
+                <span class="chip">DoorDash（delivery optimization）</span>
+                <span class="chip">滴滴出行（调度系统）</span>
+                <span class="chip">Instacart（供需系统）</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 四、能力差距 -->
+    <section id="gap" class="section">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <h2>当前能力 vs 目标能力差距</h2>
+      </div>
+
+      <div class="gap-grid">
+        <div class="gap-col gap-col--have">
+          <h3>✅ 已具备能力 · Stage 1</h3>
+          <ul>
+            <li>Feed recommendation system</li>
+            <li>Content understanding</li>
+            <li>Geo-aware news distribution</li>
+            <li>Engagement optimization</li>
+          </ul>
+        </div>
+
+        <div class="gap-col gap-col--miss">
+          <h3>❌ 核心缺口</h3>
+
+          <div class="miss">
+            <header class="miss__head">
+              <span class="miss__tag">缺口 1 · 最大</span>
+              <h4>Intent System 缺失</h4>
+            </header>
+            <ul>
+              <li>无法理解用户「想做什么」</li>
+              <li>仍停留在 content consumption</li>
+            </ul>
+          </div>
+
+          <div class="miss">
+            <header class="miss__head">
+              <span class="miss__tag">缺口 2 · 结构性</span>
+              <h4>POI / World Model 缺失</h4>
+            </header>
+            <ul>
+              <li>缺少商家/地点统一建模</li>
+              <li>没有 knowledge graph</li>
+            </ul>
+          </div>
+
+          <div class="miss">
+            <header class="miss__head">
+              <span class="miss__tag">缺口 3 · 未来</span>
+              <h4>Marketplace System 未建立</h4>
+            </header>
+            <ul>
+              <li>无 supply-demand system</li>
+              <li>无交易与履约体系</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 五、招聘优先级 -->
+    <section id="priority" class="section">
+      <div class="section__head">
+        <span class="section__num">05</span>
+        <h2>人才招聘优先级</h2>
+      </div>
+
+      <ol class="priority">
+        <li class="priority__item priority--p0">
+          <div class="priority__tier">P0 · 立即招聘</div>
+          <div class="priority__role">Local AI / Intent System Owner</div>
+          <div class="priority__why">
+            决定产品是否从「新闻平台」升级为「本地智能平台」。
+          </div>
+        </li>
+        <li class="priority__item priority--p05">
+          <div class="priority__tier">P0.5 · 同步启动</div>
+          <div class="priority__role">POI / Merchant Intelligence Owner</div>
+          <div class="priority__why">
+            决定是否具备「现实世界理解能力」。
+          </div>
+        </li>
+        <li class="priority__item priority--p1">
+          <div class="priority__tier">P1 · 后置</div>
+          <div class="priority__role">Marketplace Optimization Owner</div>
+          <div class="priority__why">
+            等交易系统成立后再引入。
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 六、结论 -->
+    <section id="conclusion" class="section">
+      <div class="section__head">
+        <span class="section__num">06</span>
+        <h2>关键结论</h2>
+      </div>
+
+      <div class="conclusion">
+        <p class="conclusion__lede">当前最大风险，<u>不是推荐系统能力不足</u>，而是：</p>
+        <p class="conclusion__core">
+          缺少「<strong>Intent + POI</strong>」两层系统，<br />
+          导致无法从内容平台升级为本地服务平台。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>NewsBreak · 本地化战略人才分析</span>
+      <span class="footer__meta">算法与架构方向 · 内部资料</span>
+    </div>
+  </footer>
+</body>
+</html>
