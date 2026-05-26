@@ -587,6 +587,229 @@ p { margin: 0.6rem 0; }
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
 }
 
+/* ---------- Nav back link (cross-page) ---------- */
+.nav__back {
+  color: var(--accent) !important;
+  font-weight: 500;
+}
+
+/* ---------- Consensus list ---------- */
+.consensus-list {
+  display: flex; flex-direction: column; gap: 12px;
+}
+.consensus-item {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 22px;
+}
+.consensus-item__num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--done), var(--accent));
+  color: #0b0d12;
+  font-weight: 700;
+  font-size: 16px;
+}
+.consensus-item__body h3 { font-size: 16px; margin-bottom: 4px; }
+.consensus-item__body p { font-size: 14.5px; color: var(--muted); margin: 0; }
+.consensus-item__body strong { color: var(--text); }
+
+/* ---------- Timeline (history) ---------- */
+.timeline {
+  list-style: none;
+  padding: 0; margin: 0;
+  position: relative;
+  display: flex; flex-direction: column; gap: 14px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 19px; top: 8px; bottom: 8px;
+  width: 2px;
+  background: var(--border-strong);
+}
+.timeline__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 16px;
+  align-items: flex-start;
+}
+.timeline__dot {
+  position: relative; z-index: 1;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px;
+  border-radius: 999px;
+  border: 2px solid var(--border-strong);
+  background: var(--bg);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--muted);
+}
+.timeline--fail .timeline__dot {
+  border-color: rgba(255,93,108,0.5);
+  color: var(--danger);
+}
+.timeline--win .timeline__dot {
+  border-color: var(--done);
+  background: rgba(69,201,142,0.15);
+  color: var(--done);
+}
+.timeline__body {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+.timeline--win .timeline__body {
+  border-color: rgba(69,201,142,0.35);
+  background: linear-gradient(180deg, rgba(69,201,142,0.06), var(--bg-elev));
+}
+.timeline__body h3 { font-size: 16px; margin-bottom: 6px; }
+.timeline__what {
+  font-size: 13.5px; color: var(--muted);
+  margin: 0 0 8px; line-height: 1.55;
+}
+.timeline__why {
+  font-size: 14px; margin: 0; line-height: 1.55;
+}
+.timeline__why strong { color: var(--text); }
+
+/* learning callout (after timeline) */
+.learning {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px; align-items: center;
+  background: linear-gradient(90deg, rgba(110,168,255,0.10), rgba(139,124,255,0.10));
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+.learning__tag {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px; letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--accent);
+  border: 1px solid rgba(110,168,255,0.4);
+  white-space: nowrap;
+}
+.learning p {
+  margin: 0; font-size: 14.5px; line-height: 1.6;
+}
+.learning p strong { color: var(--text); }
+.learning p u {
+  text-decoration-color: var(--gap);
+  text-underline-offset: 3px;
+}
+
+/* ---------- Tensions ---------- */
+.tensions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.tension {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 22px;
+  position: relative;
+}
+.tension::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+  background: var(--gap);
+  border-radius: 14px 0 0 14px;
+}
+.tension__head { margin-bottom: 10px; }
+.tension__tag {
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px; letter-spacing: 0.08em;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(255,138,92,0.10);
+  color: var(--gap);
+  border: 1px solid rgba(255,138,92,0.35);
+  margin-bottom: 8px;
+}
+.tension h3 { font-size: 16px; }
+.tension ul { font-size: 14px; line-height: 1.6; margin: 0; }
+.tension ul strong { color: var(--text); }
+.tension__close {
+  margin: 10px 0 0;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+  font-size: 13.5px;
+  color: var(--gap);
+  font-weight: 500;
+}
+
+/* mini table inside tension card */
+.mini-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  margin: 6px 0 0;
+}
+.mini-table th, .mini-table td {
+  text-align: left;
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--border);
+}
+.mini-table th {
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom-color: var(--border-strong);
+}
+.mini-table tr:last-child td { border-bottom: none; }
+
+/* ---------- Open questions ---------- */
+.questions {
+  list-style: none;
+  padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.question {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 16px;
+  align-items: center;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 20px;
+}
+.question__num {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 18px; font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+.question__body {
+  display: flex; flex-direction: column; gap: 6px;
+}
+.question__text {
+  margin: 0; font-size: 15px; line-height: 1.5;
+}
+.question__text strong { color: var(--accent); }
+.question__who {
+  font-size: 11.5px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .stages { grid-template-columns: 1fr; }
@@ -597,6 +820,7 @@ p { margin: 0.6rem 0; }
   .mv-grid { grid-template-columns: 1fr; }
   .anchors { grid-template-columns: repeat(2, 1fr); }
   .pillars { grid-template-columns: 1fr; }
+  .tensions { grid-template-columns: 1fr; }
   .nav { display: none; }
   .hero { padding-top: 56px; }
 }
