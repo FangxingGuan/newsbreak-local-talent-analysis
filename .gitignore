@@ -3,3 +3,6 @@ node_modules/
 .vscode/
 .idea/
 *.log
+
+# 内部资料 — 含真实姓名 / 产品名，禁止 push
+_internal/
