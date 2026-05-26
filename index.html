@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>本地化战略人才分析</title>
-  <meta name="description" content="本地内容平台向本地服务平台演进的战略人才分析（算法与架构方向）" />
+  <title>本地化战略人才分析 · 算法与架构</title>
+  <meta name="description" content="从本地新闻分发到本地 AI 信息与服务平台的演进路径，以及对应的算法与架构人才需求（已脱敏）" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -12,15 +12,16 @@
     <div class="topbar__inner">
       <a class="brand" href="#top">
         <span class="brand__mark">本</span>
-        <span class="brand__name">本地化战略人才分析</span>
+        <span class="brand__name">本地化战略人才分析 · 算法与架构</span>
       </a>
       <nav class="nav">
-        <a href="#background">战略背景</a>
-        <a href="#stages">演进阶段</a>
-        <a href="#roles">关键人才</a>
-        <a href="#gap">能力差距</a>
+        <a href="#mission">使命愿景</a>
+        <a href="#anchors">战略锚点</a>
+        <a href="#path">发展路径</a>
+        <a href="#pillars">两大平台</a>
+        <a href="#algo">算法人才</a>
+        <a href="#arch">架构人才</a>
         <a href="#priority">招聘优先级</a>
-        <a href="#conclusion">结论</a>
       </nav>
     </div>
   </header>
@@ -29,241 +30,345 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero__inner">
-        <span class="eyebrow">算法与架构方向 · 战略人才盘点</span>
-        <h1>从<em>本地新闻推荐</em>到<em>本地信息与服务</em></h1>
+        <span class="eyebrow">算法与架构方向 · 战略人才盘点（已脱敏）</span>
+        <h1>从<em>本地新闻分发</em>到<em>本地 AI 信息与服务平台</em></h1>
         <p class="lede">
-          某本地内容平台正处于从「本地新闻推荐平台」演进为「本地信息与服务平台」的关键路径上。
-          这份分析回答两个问题：<strong>下一阶段缺什么系统</strong>，以及<strong>需要什么样的人</strong>来构建它。
+          公司战略已升级：核心不再是「News」，而是「<strong>Local × AI</strong>」。
+          产品形态从单一新闻分发，演进为<strong>横向扩展的本地信息平台</strong>与<strong>纵向打通的本地服务平台</strong>。
+          这份分析回答：演进路径上需要什么样的算法与架构人才。
         </p>
 
-        <!-- Core path -->
-        <div class="path" aria-label="核心演进路径">
+        <div class="path" aria-label="发展路径">
           <div class="path__node done">
-            <span class="path__label">Content</span>
+            <span class="path__verb">Consume</span>
+            <span class="path__label">本地内容平台</span>
             <span class="path__status">已完成</span>
           </div>
           <div class="path__arrow" aria-hidden="true">→</div>
           <div class="path__node gap">
-            <span class="path__label">Intent</span>
-            <span class="path__status">核心缺口</span>
-          </div>
-          <div class="path__arrow" aria-hidden="true">→</div>
-          <div class="path__node gap">
-            <span class="path__label">POI</span>
-            <span class="path__status">结构性缺口</span>
+            <span class="path__verb">Discover · Decide</span>
+            <span class="path__label">本地 AI 信息平台</span>
+            <span class="path__status">建设中 · 当前重点</span>
           </div>
           <div class="path__arrow" aria-hidden="true">→</div>
           <div class="path__node future">
-            <span class="path__label">Marketplace</span>
-            <span class="path__status">未来</span>
+            <span class="path__verb">Act</span>
+            <span class="path__label">本地 AI 服务平台</span>
+            <span class="path__status">同步启动</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 一、战略背景 -->
-    <section id="background" class="section">
+    <!-- 01 Mission & Vision -->
+    <section id="mission" class="section">
       <div class="section__head">
         <span class="section__num">01</span>
-        <h2>战略背景</h2>
+        <h2>使命与愿景</h2>
       </div>
-      <div class="card prose">
-        <p>
-          某本地内容平台正从「<strong>本地新闻推荐平台</strong>」演进为「<strong>本地信息与服务平台</strong>」，核心路径是：
-        </p>
-        <p class="callout">Content → Intent → POI → Marketplace</p>
-        <p>
-          当前系统已具备较强的本地内容推荐能力，但<strong>尚未形成完整的本地决策与服务系统</strong>。
-        </p>
+      <div class="mv-grid">
+        <div class="mv-card mv-card--mission">
+          <span class="mv-card__tag">Mission</span>
+          <h3>让本地生活更易导航、决策与行动</h3>
+          <p>每天为用户创造价值：在本地生活的方方面面，更轻松地 navigate（找）、decide（选）、act（做）。</p>
+        </div>
+        <div class="mv-card mv-card--vision">
+          <span class="mv-card__tag">Vision</span>
+          <h3>成为本地生活的 AI 平台</h3>
+          <p>连接人、信息与商业，构建更紧密、更知情、更有活力的本地社区。</p>
+        </div>
       </div>
     </section>
 
-    <!-- 二、系统演进阶段 -->
-    <section id="stages" class="section">
+    <!-- 02 6 Strategic Anchors -->
+    <section id="anchors" class="section">
       <div class="section__head">
         <span class="section__num">02</span>
-        <h2>系统演进阶段</h2>
+        <h2>六大战略锚点</h2>
+        <p class="section__sub">理解公司方向的六个最清晰视角。</p>
+      </div>
+      <div class="anchors">
+        <div class="anchor">
+          <span class="anchor__num">1</span>
+          <h3>Local &gt; News</h3>
+          <p>Local 是核心，News 只是本地生活体验的其中一部分。</p>
+        </div>
+        <div class="anchor">
+          <span class="anchor__num">2</span>
+          <h3>从新闻 App → AI/Tech 平台</h3>
+          <p>构建以 <strong>Local × AI</strong> 为核心价值的应用与功能矩阵。</p>
+        </div>
+        <div class="anchor">
+          <span class="anchor__num">3</span>
+          <h3>2C + 2B 双向赋能</h3>
+          <p>除服务用户外，还要赋能 publisher、advertiser、本地商家等生态参与者；2B 同时验证并强化底层技术。</p>
+        </div>
+        <div class="anchor">
+          <span class="anchor__num">4</span>
+          <h3>从 Information 到 Action</h3>
+          <p>先「help people get informed」，再「help people get things done」。最终目标：用户任务完成数 + 本地商家可衡量业务结果。</p>
+        </div>
+        <div class="anchor">
+          <span class="anchor__num">5</span>
+          <h3>自建 + 孵化投资</h3>
+          <p>不仅自建，还通过投资部门支持构建本地内容、信息、商业生态的创新者。</p>
+        </div>
+        <div class="anchor">
+          <span class="anchor__num">6</span>
+          <h3>难题优先于唾手可得</h3>
+          <p>优先创造 <strong>Local × AI</strong> 长期核心价值。问题「难」往往是组织能力、人才、专业度的信号 — 要补齐。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Development Path -->
+    <section id="path" class="section">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2>发展路径：从本地新闻分发到本地 AI 平台</h2>
+        <p class="section__sub">三阶段演进，对应用户价值的三种动作：消费 → 了解决策 → 行动。</p>
       </div>
 
       <div class="stages">
         <article class="stage stage--done">
           <header class="stage__head">
-            <span class="stage__badge">Stage 1</span>
+            <span class="stage__badge">阶段一</span>
             <span class="stage__status">已完成</span>
           </header>
-          <h3>Local Content Platform</h3>
-          <p class="stage__essence">内容推荐系统 · Content-centric system</p>
+          <h3>本地内容平台</h3>
+          <p class="stage__essence">Local News Distribution · Content-centric</p>
+          <p class="stage__user"><strong>用户价值：</strong>Consume — 看到本地的新闻与内容</p>
 
-          <h4>核心能力</h4>
+          <h4>已具备能力</h4>
           <ul>
-            <li>Feed 推荐系统</li>
-            <li>本地新闻分发（geo-aware ranking）</li>
-            <li>用户兴趣建模（content-based）</li>
-            <li>CTR / engagement optimization</li>
+            <li>Feed 推荐系统（geo-aware ranking）</li>
+            <li>本地新闻分发与内容理解</li>
+            <li>基于内容的用户兴趣建模</li>
+            <li>CTR / engagement 优化</li>
           </ul>
         </article>
 
         <article class="stage stage--gap">
           <header class="stage__head">
-            <span class="stage__badge">Stage 2</span>
-            <span class="stage__status">当前缺失核心</span>
+            <span class="stage__badge">阶段二</span>
+            <span class="stage__status">当前重点</span>
           </header>
-          <h3>Local Intent Platform</h3>
-          <p class="stage__essence">意图驱动的推荐系统 · Intent-centric system</p>
+          <h3>本地 AI 信息平台</h3>
+          <p class="stage__essence">Local AI Information Platform · Intent-centric · 横向扩展</p>
+          <p class="stage__user"><strong>用户价值：</strong>Discover + Decide — 「help people get informed」</p>
 
           <h4>目标能力</h4>
           <ul>
-            <li>用户本地意图识别（implicit intent）</li>
-            <li>Feed + Search 融合</li>
-            <li>content → action mapping</li>
-            <li>本地决策排序系统</li>
+            <li>主应用升级：更多本地化 tab、支持孵化的架构、更强体验、更高内容与广告质量</li>
+            <li>本地生活应用矩阵（content / info / services 三层）— breadth-first</li>
+            <li>本地意图理解 · Feed + Search 融合</li>
+            <li>主应用与垂类应用共享 API / 基建，互相反哺</li>
+            <li>本地 AI 搜索与问答（信息侧）</li>
           </ul>
+
+          <h4>结构性意义</h4>
+          <p class="stage__note">
+            同时具备<strong>防守</strong>（巩固本地 default entry point）与<strong>进攻</strong>（孵化新垂类、塑造用户行为）两面，
+            是当前最关键的战略之一。
+          </p>
         </article>
 
         <article class="stage stage--future">
           <header class="stage__head">
-            <span class="stage__badge">Stage 3</span>
-            <span class="stage__status">未来</span>
+            <span class="stage__badge">阶段三</span>
+            <span class="stage__status">同步启动</span>
           </header>
-          <h3>Local Marketplace Platform</h3>
-          <p class="stage__essence">本地交易与履约系统 · Marketplace system</p>
+          <h3>本地 AI 服务平台</h3>
+          <p class="stage__essence">Local AI Commerce Platform · Action-centric · 纵向打通</p>
+          <p class="stage__user"><strong>用户价值：</strong>Act — 「help people get things done」</p>
 
           <h4>目标能力</h4>
           <ul>
-            <li>POI / 商家系统</li>
-            <li>supply-demand matching</li>
-            <li>dispatch / routing / ETA</li>
-            <li>pricing & optimization</li>
+            <li>本地生活 AI agent 与搜索 — depth-first，一个垂类做透再扩展</li>
+            <li>Discover → Decide → Act 全链路闭环优化</li>
+            <li>对接本地商家与服务提供方（BD + 生态投资）</li>
+            <li>POI / 商家系统、供需匹配、履约能力逐步建立</li>
+            <li>成功指标：用户任务完成数 + 本地商家可衡量业务结果</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <!-- 三、关键人才结构 -->
-    <section id="roles" class="section">
+    <!-- 04 Two Pillars + Strategies -->
+    <section id="pillars" class="section">
       <div class="section__head">
-        <span class="section__num">03</span>
-        <h2>关键人才结构</h2>
-        <p class="section__sub">围绕三阶段演进，对应三位核心负责人。</p>
+        <span class="section__num">04</span>
+        <h2>两大产品平台 + 五大战略举措</h2>
+        <p class="section__sub">两条主线（信息 / 服务）+ 一条共用底座（技术 / 生态），五大战略攻防互补。</p>
+      </div>
+
+      <div class="pillars">
+        <article class="pillar pillar--info">
+          <header class="pillar__head">
+            <span class="pillar__tag">平台 A · 横向</span>
+            <h3>本地 AI 信息平台</h3>
+          </header>
+          <p class="pillar__desc">横向扩展，覆盖本地内容、信息、服务。<strong>成功指标：</strong>有意义的新本地垂类被创造与验证的数量。</p>
+          <h4>承载战略</h4>
+          <ul class="strat-list">
+            <li>
+              <span class="strat__tag both">攻+守</span>
+              <span><strong>战略 1：主应用 2.0</strong> — 更多本地 tab、孵化架构、更强体验、内容与广告质量</span>
+            </li>
+            <li>
+              <span class="strat__tag offense">进攻</span>
+              <span><strong>战略 2：本地生活应用矩阵</strong>（content / info / services） — breadth-first，hypergrowth + 可持续商业</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="pillar pillar--commerce">
+          <header class="pillar__head">
+            <span class="pillar__tag">平台 B · 纵向</span>
+            <h3>本地 AI 服务平台</h3>
+          </header>
+          <p class="pillar__desc">纵向打通用户与本地商家。<strong>成功指标：</strong>被连接 / 接入 / 活跃的本地商家与品类数量。</p>
+          <h4>承载战略</h4>
+          <ul class="strat-list">
+            <li>
+              <span class="strat__tag offense">进攻</span>
+              <span><strong>战略 3：本地 AI agent 与搜索</strong> — depth-first，逐垂类优化 discover → decide → act 链路</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="pillar pillar--infra">
+          <header class="pillar__head">
+            <span class="pillar__tag">底座 · 跨平台</span>
+            <h3>技术底座与生态</h3>
+          </header>
+          <p class="pillar__desc">支撑两大平台同时演进的技术与生态投入。</p>
+          <h4>承载战略</h4>
+          <ul class="strat-list">
+            <li>
+              <span class="strat__tag defense">防守</span>
+              <span><strong>战略 4：广告与基础技术体系 2.0</strong> — A/B 测试基建、系统架构现代化、模型鲁棒性、广告算法与 2B 解决方案</span>
+            </li>
+            <li>
+              <span class="strat__tag offense">进攻</span>
+              <span><strong>战略 5：本地生态投资</strong> — 支持具有互补能力的初创公司</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 05 Algorithm Talent -->
+    <section id="algo" class="section">
+      <div class="section__head">
+        <span class="section__num">05</span>
+        <h2>算法人才需求</h2>
+        <p class="section__sub">三位核心算法负责人 — 对应「信息 / 服务 / 商业化」三条主线。</p>
       </div>
 
       <div class="roles">
-        <!-- Role 1 -->
         <article class="role">
           <header class="role__head">
-            <span class="role__tier tier-p0">P0 · 立即招聘</span>
-            <h3>Local AI / Intent System Owner</h3>
+            <span class="role__tier tier-p0">P0 · 立即招聘 · 算法</span>
+            <h3>本地意图与搜推融合 Lead</h3>
             <p class="role__oneliner">
-              负责构建「<strong>用户在本地想做什么</strong>」的统一理解与排序系统。
+              负责构建「<strong>用户在本地想做什么</strong>」的统一理解与排序系统 — 信息平台的核心算法。
             </p>
           </header>
-
           <div class="role__body">
             <div class="role__col">
               <h4>核心职责</h4>
               <ul>
                 <li>Feed + Search 融合架构</li>
-                <li>Local intent modeling</li>
-                <li>content → service / action 转化</li>
-                <li>ranking 从 CTR → decision optimization</li>
-                <li>real-time personalization</li>
+                <li>Local intent modeling（implicit / explicit）</li>
+                <li>排序从 CTR → decision optimization（导向决策与行动）</li>
+                <li>主应用与垂类应用之间共享的用户表征 / embedding</li>
+                <li>实时个性化与多目标优化</li>
               </ul>
             </div>
             <div class="role__col">
               <h4>必备背景</h4>
               <ul>
-                <li>推荐系统 / 搜索排序经验（强）</li>
-                <li>Local / geo / LBS 相关经验（强加分）</li>
-                <li>多目标优化 / embedding system</li>
+                <li>大规模推荐 / 搜索排序经验（强）</li>
+                <li>Local / geo / LBS 经验（强加分）</li>
+                <li>多目标优化、embedding system、跨场景迁移</li>
               </ul>
-
-              <h4>典型来源公司</h4>
+              <h4>典型来源</h4>
               <div class="chips">
-                <span class="chip">字节跳动（推荐/搜索）</span>
-                <span class="chip">Google（Search / Maps）</span>
-                <span class="chip">小红书（content→intent）</span>
-                <span class="chip">Yelp（local search）</span>
+                <span class="chip">头部短视频与内容社区（推荐/搜索）</span>
+                <span class="chip">大型搜索公司（Search / Maps）</span>
+                <span class="chip">本地点评 / 本地搜索平台</span>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- Role 2 -->
         <article class="role">
           <header class="role__head">
-            <span class="role__tier tier-p05">P0.5 · 同步启动</span>
-            <h3>POI / Merchant Intelligence Owner</h3>
+            <span class="role__tier tier-p0">P0 · 立即招聘 · 算法</span>
+            <h3>本地 AI Agent 与行动优化 Lead</h3>
             <p class="role__oneliner">
-              负责构建「<strong>现实世界有哪些商家/地点及其能力</strong>」的结构化理解系统。
+              负责把信息转化为<strong>任务完成</strong> — 服务平台与 commerce 的核心算法。
             </p>
           </header>
-
           <div class="role__body">
             <div class="role__col">
               <h4>核心职责</h4>
               <ul>
-                <li>POI / entity system design</li>
-                <li>merchant graph / knowledge graph</li>
-                <li>geo relationship modeling</li>
-                <li>entity resolution & dedup</li>
-                <li>service taxonomy design</li>
-                <li>POI embedding system</li>
+                <li>本地生活 AI agent（discover → decide → act 闭环）</li>
+                <li>LLM + 工具使用 + 多步推理</li>
+                <li>垂类纵深优化（一个垂类一个垂类做透）</li>
+                <li>用户任务完成数 / 本地商家业务结果的算法侧 owner</li>
+                <li>RL / 反馈闭环 / 在线优化</li>
               </ul>
             </div>
             <div class="role__col">
               <h4>必备背景</h4>
               <ul>
-                <li>LBS / map / geo system</li>
-                <li>knowledge graph / entity system</li>
-                <li>large-scale structured data system</li>
+                <li>LLM / agent / tool use 系统经验（强）</li>
+                <li>对话式或任务型 AI 落地经验</li>
+                <li>o2o / 本地服务业务理解（加分）</li>
               </ul>
-
-              <h4>典型来源公司</h4>
+              <h4>典型来源</h4>
               <div class="chips">
-                <span class="chip">美团（POI / 商家中台）</span>
-                <span class="chip">Google（Maps / Knowledge Graph）</span>
-                <span class="chip">高德地图（地理系统）</span>
-                <span class="chip">Yelp（local business graph）</span>
+                <span class="chip">大型基础模型团队</span>
+                <span class="chip">AI agent / copilot 产品团队</span>
+                <span class="chip">本地生活 / O2O 平台 AI 团队</span>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- Role 3 -->
         <article class="role">
           <header class="role__head">
-            <span class="role__tier tier-p1">P1 · 后置</span>
-            <h3>Marketplace Optimization Owner</h3>
+            <span class="role__tier tier-p0">P0 · 立即招聘 · 算法</span>
+            <h3>广告算法与商业化科学 Lead</h3>
             <p class="role__oneliner">
-              负责在<strong>供需约束下完成最优匹配与履约</strong>的系统设计。
+              负责 ad 排序、定价与 2B 商业化算法 — <strong>当前最确定的现金流</strong>，并支撑平台战略。
             </p>
           </header>
-
           <div class="role__body">
             <div class="role__col">
               <h4>核心职责</h4>
               <ul>
-                <li>supply-demand matching</li>
-                <li>dispatch / routing / scheduling</li>
-                <li>ETA prediction</li>
-                <li>pricing / incentive system</li>
-                <li>real-time optimization / OR</li>
+                <li>广告排序、出价、定价、归因</li>
+                <li>面向 publisher / advertiser 的 2B 自助化算法</li>
+                <li>跨应用矩阵的统一广告变现</li>
+                <li>模型鲁棒性 / 反作弊 / 长期价值优化</li>
               </ul>
             </div>
             <div class="role__col">
               <h4>必备背景</h4>
               <ul>
-                <li>marketplace / logistics system</li>
-                <li>运筹优化 / OR / RL</li>
-                <li>real-time system design</li>
+                <li>大规模广告系统 / ad science 经验（强）</li>
+                <li>多目标拍卖、calibration、uplift</li>
+                <li>2B 平台 / 程序化广告经验（加分）</li>
               </ul>
-
-              <h4>典型来源公司</h4>
+              <h4>典型来源</h4>
               <div class="chips">
-                <span class="chip">Uber（dispatch / marketplace）</span>
-                <span class="chip">DoorDash（delivery optimization）</span>
-                <span class="chip">滴滴出行（调度系统）</span>
-                <span class="chip">Instacart（供需系统）</span>
+                <span class="chip">大型广告平台</span>
+                <span class="chip">头部信息流广告团队</span>
+                <span class="chip">程序化广告 / DSP / SSP</span>
               </div>
             </div>
           </div>
@@ -271,107 +376,179 @@
       </div>
     </section>
 
-    <!-- 四、能力差距 -->
-    <section id="gap" class="section">
+    <!-- 06 Architecture Talent -->
+    <section id="arch" class="section">
       <div class="section__head">
-        <span class="section__num">04</span>
-        <h2>当前能力 vs 目标能力差距</h2>
+        <span class="section__num">06</span>
+        <h2>架构人才需求</h2>
+        <p class="section__sub">三位核心架构负责人 — 对应「应用矩阵 / 实验与 ML 平台 / 知识图谱 + Agent 运行时」。</p>
       </div>
 
-      <div class="gap-grid">
-        <div class="gap-col gap-col--have">
-          <h3>✅ 已具备能力 · Stage 1</h3>
-          <ul>
-            <li>Feed recommendation system</li>
-            <li>Content understanding</li>
-            <li>Geo-aware news distribution</li>
-            <li>Engagement optimization</li>
-          </ul>
-        </div>
-
-        <div class="gap-col gap-col--miss">
-          <h3>❌ 核心缺口</h3>
-
-          <div class="miss">
-            <header class="miss__head">
-              <span class="miss__tag">缺口 1 · 最大</span>
-              <h4>Intent System 缺失</h4>
-            </header>
-            <ul>
-              <li>无法理解用户「想做什么」</li>
-              <li>仍停留在 content consumption</li>
-            </ul>
+      <div class="roles">
+        <article class="role">
+          <header class="role__head">
+            <span class="role__tier tier-p0">P0 · 立即招聘 · 架构</span>
+            <h3>应用矩阵与孵化平台架构师</h3>
+            <p class="role__oneliner">
+              负责<strong>主应用 + 多垂类应用</strong>的共享架构 — 让矩阵互相反哺成为可能。
+            </p>
+          </header>
+          <div class="role__body">
+            <div class="role__col">
+              <h4>核心职责</h4>
+              <ul>
+                <li>跨应用共享 API、SDK、基建</li>
+                <li>主应用「孵化器」模式的架构（新垂类 tab、模块化注入）</li>
+                <li>多应用统一身份 / 数据 / 内容 / 广告通道</li>
+                <li>新应用从 0 → 1 的发布流水线</li>
+              </ul>
+            </div>
+            <div class="role__col">
+              <h4>必备背景</h4>
+              <ul>
+                <li>多应用 / 多产品线平台架构经验</li>
+                <li>移动端 + Web + 服务端全栈架构能力</li>
+                <li>API 与 SDK 设计、跨团队协作</li>
+              </ul>
+              <h4>典型来源</h4>
+              <div class="chips">
+                <span class="chip">大型应用矩阵公司（多 App 共平台）</span>
+                <span class="chip">超级 App 平台架构团队</span>
+                <span class="chip">开发者平台 / 小程序平台</span>
+              </div>
+            </div>
           </div>
+        </article>
 
-          <div class="miss">
-            <header class="miss__head">
-              <span class="miss__tag">缺口 2 · 结构性</span>
-              <h4>POI / World Model 缺失</h4>
-            </header>
-            <ul>
-              <li>缺少商家/地点统一建模</li>
-              <li>没有 knowledge graph</li>
-            </ul>
+        <article class="role">
+          <header class="role__head">
+            <span class="role__tier tier-p0">P0 · 立即招聘 · 架构</span>
+            <h3>实验与 ML 平台架构师</h3>
+            <p class="role__oneliner">
+              负责 A/B 测试基建、特征平台、模型服务 — <strong>所有算法迭代的速度上限</strong>由这里决定。
+            </p>
+          </header>
+          <div class="role__body">
+            <div class="role__col">
+              <h4>核心职责</h4>
+              <ul>
+                <li>A/B 测试平台 2.0（多变量、长期、交互式分析）</li>
+                <li>特征平台 / Feature Store</li>
+                <li>模型训练与在线服务基建</li>
+                <li>实时数据管道与监控</li>
+                <li>模型鲁棒性与质量保障流程</li>
+              </ul>
+            </div>
+            <div class="role__col">
+              <h4>必备背景</h4>
+              <ul>
+                <li>大规模 A/B testing 平台建设经验</li>
+                <li>ML infra / MLOps 经验</li>
+                <li>对算法迭代痛点有第一性理解</li>
+              </ul>
+              <h4>典型来源</h4>
+              <div class="chips">
+                <span class="chip">大型互联网公司实验平台团队</span>
+                <span class="chip">ML 平台 / MLOps 团队</span>
+                <span class="chip">独立 A/B testing 工具公司</span>
+              </div>
+            </div>
           </div>
+        </article>
 
-          <div class="miss">
-            <header class="miss__head">
-              <span class="miss__tag">缺口 3 · 未来</span>
-              <h4>Marketplace System 未建立</h4>
-            </header>
-            <ul>
-              <li>无 supply-demand system</li>
-              <li>无交易与履约体系</li>
-            </ul>
+        <article class="role">
+          <header class="role__head">
+            <span class="role__tier tier-p05">P0.5 · 同步启动 · 架构</span>
+            <h3>本地知识图谱与 Agent 运行时架构师</h3>
+            <p class="role__oneliner">
+              负责「<strong>现实世界结构化</strong>」+「<strong>AI agent 的工具与状态</strong>」 — 同时支撑信息平台与服务平台。
+            </p>
+          </header>
+          <div class="role__body">
+            <div class="role__col">
+              <h4>核心职责</h4>
+              <ul>
+                <li>POI / entity system / merchant graph</li>
+                <li>knowledge graph、entity resolution、geo 关系建模</li>
+                <li>AI agent runtime（工具调用、记忆、状态、编排）</li>
+                <li>LLM gateway / 模型路由 / 成本治理</li>
+                <li>同时服务「信息侧搜索」与「服务侧 agent」</li>
+              </ul>
+            </div>
+            <div class="role__col">
+              <h4>必备背景</h4>
+              <ul>
+                <li>LBS / map / geo system 经验</li>
+                <li>knowledge graph / large-scale entity system</li>
+                <li>LLM agent / 工具调用基建（加分）</li>
+              </ul>
+              <h4>典型来源</h4>
+              <div class="chips">
+                <span class="chip">本地生活 POI / 商家中台</span>
+                <span class="chip">大型地图与知识图谱团队</span>
+                <span class="chip">LLM agent 平台公司</span>
+              </div>
+            </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <!-- 五、招聘优先级 -->
+    <!-- 07 Hiring Priority -->
     <section id="priority" class="section">
       <div class="section__head">
-        <span class="section__num">05</span>
-        <h2>人才招聘优先级</h2>
+        <span class="section__num">07</span>
+        <h2>整体招聘优先级</h2>
+        <p class="section__sub">六个核心岗位按优先级排列；P0 同步推进，缺一个都会卡战略。</p>
       </div>
 
       <ol class="priority">
         <li class="priority__item priority--p0">
           <div class="priority__tier">P0 · 立即招聘</div>
-          <div class="priority__role">Local AI / Intent System Owner</div>
-          <div class="priority__why">
-            决定产品是否从「新闻平台」升级为「本地智能平台」。
-          </div>
+          <div class="priority__role">本地意图与搜推融合 Lead <span class="priority__lane">算法</span></div>
+          <div class="priority__why">决定信息平台是否能从「内容推荐」升级为「本地决策系统」。</div>
+        </li>
+        <li class="priority__item priority--p0">
+          <div class="priority__tier">P0 · 立即招聘</div>
+          <div class="priority__role">本地 AI Agent 与行动优化 Lead <span class="priority__lane">算法</span></div>
+          <div class="priority__why">决定能否从「information」走向「action」 — 服务平台的核心算法。</div>
+        </li>
+        <li class="priority__item priority--p0">
+          <div class="priority__tier">P0 · 立即招聘</div>
+          <div class="priority__role">广告算法与商业化科学 Lead <span class="priority__lane">算法</span></div>
+          <div class="priority__why">支撑商业化与跨应用矩阵变现 — 战略 4 的核心算法位置。</div>
+        </li>
+        <li class="priority__item priority--p0">
+          <div class="priority__tier">P0 · 立即招聘</div>
+          <div class="priority__role">应用矩阵与孵化平台架构师 <span class="priority__lane">架构</span></div>
+          <div class="priority__why">没有共享架构，矩阵就只是孤岛 — 战略 1 + 2 的物理基础。</div>
+        </li>
+        <li class="priority__item priority--p0">
+          <div class="priority__tier">P0 · 立即招聘</div>
+          <div class="priority__role">实验与 ML 平台架构师 <span class="priority__lane">架构</span></div>
+          <div class="priority__why">决定所有算法迭代的速度上限 — 战略 4 显式强调的关键差距。</div>
         </li>
         <li class="priority__item priority--p05">
           <div class="priority__tier">P0.5 · 同步启动</div>
-          <div class="priority__role">POI / Merchant Intelligence Owner</div>
-          <div class="priority__why">
-            决定是否具备「现实世界理解能力」。
-          </div>
-        </li>
-        <li class="priority__item priority--p1">
-          <div class="priority__tier">P1 · 后置</div>
-          <div class="priority__role">Marketplace Optimization Owner</div>
-          <div class="priority__why">
-            等交易系统成立后再引入。
-          </div>
+          <div class="priority__role">本地知识图谱与 Agent 运行时架构师 <span class="priority__lane">架构</span></div>
+          <div class="priority__why">同时供给信息平台与服务平台的「现实世界结构化」+「agent 工具」基建。</div>
         </li>
       </ol>
     </section>
 
-    <!-- 六、结论 -->
+    <!-- 08 Conclusion -->
     <section id="conclusion" class="section">
       <div class="section__head">
-        <span class="section__num">06</span>
+        <span class="section__num">08</span>
         <h2>关键结论</h2>
       </div>
-
       <div class="conclusion">
-        <p class="conclusion__lede">当前最大风险，<u>不是推荐系统能力不足</u>，而是：</p>
+        <p class="conclusion__lede">人才决定战略能否落地。当前最大风险不在「再做一个更好的新闻推荐」，而在：</p>
         <p class="conclusion__core">
-          缺少「<strong>Intent + POI</strong>」两层系统，<br />
-          导致无法从内容平台升级为本地服务平台。
+          缺少把<strong>本地内容</strong>升级为<strong>本地信息与服务</strong>的<br />
+          <strong>算法新主线</strong>（意图 / Agent / 商业化）<br />
+          与 <strong>架构新底座</strong>（应用矩阵 / 实验平台 / 知识图谱 + Agent 运行时）<br />
+          的负责人。
         </p>
       </div>
     </section>
@@ -379,8 +556,8 @@
 
   <footer class="footer">
     <div class="footer__inner">
-      <span>本地化战略人才分析</span>
-      <span class="footer__meta">算法与架构方向 · 内部资料</span>
+      <span>本地化战略人才分析 · 算法与架构</span>
+      <span class="footer__meta">内部资料 · 已脱敏</span>
     </div>
   </footer>
 </body>

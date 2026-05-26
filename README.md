@@ -1,47 +1,45 @@
-# 本地化战略人才分析
+# 本地化战略人才分析 · 算法与架构
 
-围绕本地内容平台从「本地新闻推荐平台」演进为「本地信息与服务平台」的战略人才盘点（算法与架构方向）。
+围绕从「本地新闻分发」到「本地 AI 信息与服务平台」的演进路径，盘点所需的算法与架构人才（已脱敏，所有公司 / 产品代号均使用通用化表述）。
 
-## 核心路径
+## 核心叙事
 
 ```
-Content → Intent → POI → Marketplace
+本地内容平台  →  本地 AI 信息平台  →  本地 AI 服务平台
+   Consume         Discover · Decide          Act
 ```
 
-## 内容结构
+从 Local News 升级为 **Local × AI**：横向构建信息平台，纵向打通服务平台。
 
-1. **战略背景** — 演进路径与当前定位
-2. **系统演进阶段** — Stage 1（已完成）/ Stage 2（核心缺失）/ Stage 3（未来）
-3. **关键人才结构** — 三位核心负责人（P0 / P0.5 / P1）
-4. **当前能力 vs 目标能力差距** — 已具备 vs 三大缺口
-5. **人才招聘优先级** — P0 / P0.5 / P1 排序
-6. **关键结论** — 最大风险与破局点
+## 页面结构
+
+1. **使命与愿景**
+2. **六大战略锚点** — 公司方向的六个视角
+3. **发展路径** — 三阶段（阶段一已完成 / 阶段二当前重点 / 阶段三同步启动）
+4. **两大产品平台 + 五大战略举措** — 信息 / 服务 / 技术底座
+5. **算法人才需求** — 3 位 P0 负责人（意图与搜推 / AI Agent / 广告算法）
+6. **架构人才需求** — 3 位负责人（应用矩阵 / 实验与 ML 平台 / 知识图谱 + Agent 运行时）
+7. **整体招聘优先级** — 6 个核心岗位排序
+8. **关键结论**
 
 ## 本地预览
 
 ```bash
-# 直接打开
 open index.html
-
-# 或起一个本地 HTTP 服务（推荐）
-python3 -m http.server 8000
-# 访问 http://localhost:8000
+# 或
+python3 -m http.server 8000  # http://localhost:8000
 ```
 
 ## 部署
 
-仓库已配置 GitHub Actions 自动部署到 GitHub Pages。
-push 到 `main` 分支会自动发布。
-
-> 私有仓库的 GitHub Pages 需要 GitHub Pro/Team/Enterprise 订阅。
-> 免费账号可将仓库改为 Public 后启用。
+GitHub Actions 自动部署到 GitHub Pages，push 到 `main` 触发。
 
 ## 文件结构
 
 ```
 .
 ├── index.html      # 单页结构
-├── styles.css      # 样式（深色主题，响应式）
+├── styles.css      # 深色主题，响应式
 ├── README.md
-└── .github/workflows/deploy.yml  # GitHub Pages 自动部署
+└── .github/workflows/deploy.yml
 ```
